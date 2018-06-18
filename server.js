@@ -4,7 +4,7 @@ let server = require('http').Server(app);
 let io = require('socket.io')(server);
 let port = 8989;
 
-app.use('/assets', express.static(__dirname + '/dist'));
+app.use('/dist', express.static(__dirname + '/dist'));
 
 let users = {};
 
